@@ -86,7 +86,7 @@ APPS = [
     ("🍷", "Wine Classifier", "จำแนกประเภทไวน์จากคุณสมบัติทางเคมี", "https://decision-tree-wine-664245010.streamlit.app/"),
     ("🎯", "K-Means Clustering", "จัดกลุ่มข้อมูลแบบ Unsupervised Learning", "https://k-means-iris-664245010.streamlit.app/"),
     ("🔍", "K-Nearest Neighbors", "จำแนกข้อมูลด้วยเพื่อนบ้านที่ใกล้ที่สุด", "https://knn-heart-disease-664245010.streamlit.app/"),
-    ("📈", "Regression", "วิเคราะห์และทำนายค่าต่อเนื่องด้วย Regression", "https://random-forest-california-housing-664245010.streamlit.app/"),
+    ("📈", "Regression", "วิเคราะห์และทำนายค่าต่อเนื่องด้วย Regression", "https://regression-california-housing-664245010.streamlit.app/"),
     ("🌲", "Random Forest", "จำแนกประเภทข้อมูลด้วยการรวมกลุ่มต้นไม้ตัดสินใจ", "https://random-forest-student-performance-664245010.streamlit.app/"),
 ]
 
