@@ -87,6 +87,7 @@ APPS = [
     ("🎯", "K-Means Clustering", "จัดกลุ่มข้อมูลแบบ Unsupervised Learning", "https://k-means-664245010.streamlit.app/"),
     ("🔍", "K-Nearest Neighbors", "จำแนกข้อมูลด้วยเพื่อนบ้านที่ใกล้ที่สุด", "https://knn-ml.streamlit.app/"),
     ("📈", "Regression", "วิเคราะห์และทำนายค่าต่อเนื่องด้วย Regression", "https://regression-664245010.streamlit.app/"),
+    ("🌲", "Random Forest", "จำแนกประเภทข้อมูลด้วยการรวมกลุ่มต้นไม้ตัดสินใจ", "https://rndforest-664245010.streamlit.app/"),
 ]
 
 cols = st.columns(3)
