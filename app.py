@@ -80,14 +80,14 @@ st.markdown("""
 st.write("")
 
 APPS = [
-    ("🌳", "Decision Tree", "โมเดลต้นไม้ตัดสินใจสำหรับงานจำแนกประเภท", "https://decisiontree-ml.streamlit.app/"),
-    ("❤️", "Heart Disease", "ทำนายความเสี่ยงโรคหัวใจด้วย Decision Tree", "https://dtreeheartdisease.streamlit.app/"),
-    ("🚢", "Titanic Survival", "ทำนายการรอดชีวิตของผู้โดยสารเรือไททานิค", "https://dtreetitanic-tpp72.streamlit.app/"),
-    ("🍷", "Wine Classifier", "จำแนกประเภทไวน์จากคุณสมบัติทางเคมี", "https://dtwine.streamlit.app/"),
-    ("🎯", "K-Means Clustering", "จัดกลุ่มข้อมูลแบบ Unsupervised Learning", "https://k-means-664245010.streamlit.app/"),
-    ("🔍", "K-Nearest Neighbors", "จำแนกข้อมูลด้วยเพื่อนบ้านที่ใกล้ที่สุด", "https://knn-ml.streamlit.app/"),
-    ("📈", "Regression", "วิเคราะห์และทำนายค่าต่อเนื่องด้วย Regression", "https://regression-664245010.streamlit.app/"),
-    ("🌲", "Random Forest", "จำแนกประเภทข้อมูลด้วยการรวมกลุ่มต้นไม้ตัดสินใจ", "https://rndforest-664245010.streamlit.app/"),
+    ("🌳", "Decision Tree", "โมเดลต้นไม้ตัดสินใจสำหรับงานจำแนกประเภท", "https://decision-tree-iris-664245010.streamlit.app/"),
+    ("❤️", "Heart Disease", "ทำนายความเสี่ยงโรคหัวใจด้วย Decision Tree", "https://decision-tree-heart-disease-664245010.streamlit.app/"),
+    ("🚢", "Titanic Survival", "ทำนายการรอดชีวิตของผู้โดยสารเรือไททานิค", "https://svm-titanic-664245010.streamlit.app/"),
+    ("🍷", "Wine Classifier", "จำแนกประเภทไวน์จากคุณสมบัติทางเคมี", "https://decision-tree-wine-664245010.streamlit.app/"),
+    ("🎯", "K-Means Clustering", "จัดกลุ่มข้อมูลแบบ Unsupervised Learning", "https://k-means-iris-664245010.streamlit.app/"),
+    ("🔍", "K-Nearest Neighbors", "จำแนกข้อมูลด้วยเพื่อนบ้านที่ใกล้ที่สุด", "https://knn-heart-disease-664245010.streamlit.app/"),
+    ("📈", "Regression", "วิเคราะห์และทำนายค่าต่อเนื่องด้วย Regression", "https://random-forest-california-housing-664245010.streamlit.app/"),
+    ("🌲", "Random Forest", "จำแนกประเภทข้อมูลด้วยการรวมกลุ่มต้นไม้ตัดสินใจ", "https://random-forest-student-performance-664245010.streamlit.app/"),
 ]
 
 cols = st.columns(3)
