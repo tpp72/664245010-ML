@@ -1,3 +1,4 @@
+import base64
 from pathlib import Path
 
 import streamlit as st
@@ -35,11 +36,14 @@ html, body, [class*="css"] { font-family: 'Prompt', sans-serif; }
 }
 .hero p { color:#8fa3c8; letter-spacing:1px; margin-top:6px; }
 
-[data-testid="stImage"] {
+.profile-photo-wrap {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
-[data-testid="stImage"] img {
+.profile-photo-wrap img {
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     border: 3px solid transparent;
     background:
@@ -47,7 +51,6 @@ html, body, [class*="css"] { font-family: 'Prompt', sans-serif; }
         linear-gradient(135deg,#00ffc8,#00a2ff,#b400ff) border-box;
     box-shadow: 0 0 35px rgba(0,255,200,0.25);
     object-fit: cover;
-    aspect-ratio: 1 / 1;
 }
 
 .profile-card {
@@ -136,9 +139,11 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 photo_path = Path(__file__).resolve().parent.parent / "assets" / "profile.jpg"
-_, center_col, _ = st.columns([1, 1, 1])
-with center_col:
-    st.image(str(photo_path), width=220)
+photo_b64 = base64.b64encode(photo_path.read_bytes()).decode()
+st.markdown(
+    f'<div class="profile-photo-wrap"><img src="data:image/jpeg;base64,{photo_b64}"></div>',
+    unsafe_allow_html=True,
+)
 
 st.markdown("""
 <div class="profile-card">
