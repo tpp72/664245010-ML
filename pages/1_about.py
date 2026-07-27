@@ -2,7 +2,12 @@ from pathlib import Path
 
 import streamlit as st
 
-st.set_page_config(page_title="ผู้พัฒนา | ML Hub", page_icon="🧑‍💻", layout="wide")
+st.set_page_config(
+    page_title="ผู้พัฒนา | ML Hub",
+    page_icon="🧑‍💻",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
 
 st.markdown("""
 <style>
@@ -74,6 +79,7 @@ html, body, [class*="css"] { font-family: 'Prompt', sans-serif; }
 .info-row span.value { font-weight: 600; }
 
 footer, #MainMenu { visibility:hidden; }
+[data-testid="stSidebar"], [data-testid="stSidebarCollapsedControl"] { visibility:visible !important; }
 </style>
 """, unsafe_allow_html=True)
 

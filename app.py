@@ -1,6 +1,11 @@
 import streamlit as st
 
-st.set_page_config(page_title="ML Hub", page_icon="🤖", layout="wide")
+st.set_page_config(
+    page_title="ML Hub",
+    page_icon="🤖",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
 
 st.markdown("""
 <style>
@@ -67,6 +72,7 @@ html, body, [class*="css"] { font-family: 'Prompt', sans-serif; }
 .btn:hover { filter: brightness(1.15); }
 
 footer, #MainMenu { visibility:hidden; }
+[data-testid="stSidebar"], [data-testid="stSidebarCollapsedControl"] { visibility:visible !important; }
 </style>
 """, unsafe_allow_html=True)
 
