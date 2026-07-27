@@ -73,6 +73,46 @@ html, body, [class*="css"] { font-family: 'Prompt', sans-serif; }
 
 footer, #MainMenu { visibility:hidden; }
 [data-testid="stSidebar"], [data-testid="stSidebarCollapsedControl"] { visibility:visible !important; }
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background: #0a0e27;
+    border-right: 1px solid rgba(0,255,200,0.15);
+}
+[data-testid="stSidebarNav"] {
+    padding-top: 6px;
+}
+[data-testid="stSidebarNav"]::before {
+    content: "MACHINE LEARNING HUB";
+    display: block;
+    margin: 14px 16px 12px 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(0,255,200,0.15);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 1.5px;
+    background: linear-gradient(90deg,#00ffc8,#00a2ff,#b400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+[data-testid="stSidebarNav"] a {
+    margin: 2px 10px;
+    padding: 10px 14px !important;
+    border-radius: 10px;
+    color: #8fa3c8 !important;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 500;
+    transition: all .2s ease;
+}
+[data-testid="stSidebarNav"] a:hover {
+    background: rgba(0,255,200,0.08);
+    color: #eaf4ff !important;
+}
+[data-testid="stSidebarNav"] a[aria-current="page"] {
+    background: linear-gradient(90deg, rgba(0,255,200,0.18), rgba(120,0,255,0.12));
+    color: #eaf4ff !important;
+    box-shadow: inset 3px 0 0 #00ffc8;
+}
 </style>
 """, unsafe_allow_html=True)
 
