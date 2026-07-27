@@ -90,10 +90,13 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-photo_path = Path(__file__).resolve().parent.parent / "assets" / "profile.jpg"
-_, center_col, _ = st.columns([1, 1, 1])
-with center_col:
-    st.image(str(photo_path), width=220)
+SHOW_PHOTO = False  # ปิดไว้ก่อนเพราะรูปจัดกึ่งกลางไม่ตรง รอปรับแก้แล้วค่อยเปิด
+
+if SHOW_PHOTO:
+    photo_path = Path(__file__).resolve().parent.parent / "assets" / "profile.jpg"
+    _, center_col, _ = st.columns([1, 1, 1])
+    with center_col:
+        st.image(str(photo_path), width=220)
 
 st.markdown("""
 <div class="profile-card">
