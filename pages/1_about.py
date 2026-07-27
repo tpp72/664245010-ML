@@ -6,7 +6,7 @@ st.set_page_config(
     page_title="ผู้พัฒนา | ML Hub",
     page_icon="🧑‍💻",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="collapsed",
 )
 
 st.markdown("""
@@ -90,13 +90,10 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-SHOW_PHOTO = False  # ปิดไว้ก่อนเพราะรูปจัดกึ่งกลางไม่ตรง รอปรับแก้แล้วค่อยเปิด
-
-if SHOW_PHOTO:
-    photo_path = Path(__file__).resolve().parent.parent / "assets" / "profile.jpg"
-    _, center_col, _ = st.columns([1, 1, 1])
-    with center_col:
-        st.image(str(photo_path), width=220)
+photo_path = Path(__file__).resolve().parent.parent / "assets" / "profile.jpg"
+_, center_col, _ = st.columns([1, 1, 1])
+with center_col:
+    st.image(str(photo_path), width=220)
 
 st.markdown("""
 <div class="profile-card">
