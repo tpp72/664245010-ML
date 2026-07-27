@@ -120,6 +120,11 @@ footer, #MainMenu { visibility:hidden; }
     color: #eaf4ff !important;
     box-shadow: inset 3px 0 0 #00ffc8;
 }
+/* เปลี่ยนข้อความเมนู: app -> หน้าหลัก, about -> ผู้พัฒนา */
+[data-testid="stSidebarNav"] li:nth-child(1) a { font-size: 0; }
+[data-testid="stSidebarNav"] li:nth-child(1) a::after { content: "หน้าหลัก"; font-size: 1rem; }
+[data-testid="stSidebarNav"] li:nth-child(2) a { font-size: 0; }
+[data-testid="stSidebarNav"] li:nth-child(2) a::after { content: "ผู้พัฒนา"; font-size: 1rem; }
 </style>
 """, unsafe_allow_html=True)
 
