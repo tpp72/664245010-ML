@@ -67,18 +67,6 @@ html, body, [class*="css"] { font-family: 'Prompt', sans-serif; }
 .btn:hover { filter: brightness(1.15); }
 
 footer, #MainMenu { visibility:hidden; }
-
-[data-testid="stPageLink"] {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(0,255,200,0.25);
-    border-radius: 10px;
-    transition: all .2s ease;
-}
-[data-testid="stPageLink"]:hover {
-    border-color: #00ffc8;
-    box-shadow: 0 0 20px rgba(0,255,200,0.2);
-}
-[data-testid="stPageLink"] p { color: #eaf4ff; font-weight: 600; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -88,10 +76,6 @@ st.markdown("""
     <p>ศูนย์รวมเว็บแอปพลิเคชัน Machine Learning</p>
 </div>
 """, unsafe_allow_html=True)
-
-_, link_col, _ = st.columns([1, 1, 1])
-with link_col:
-    st.page_link("pages/1_about.py", label="🧑‍💻 เกี่ยวกับผู้พัฒนา", use_container_width=True)
 
 st.write("")
 
