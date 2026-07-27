@@ -91,7 +91,7 @@ st.markdown("""
 
 _, link_col, _ = st.columns([1, 1, 1])
 with link_col:
-    st.page_link("pages/1_ผู้พัฒนา.py", label="🧑‍💻 เกี่ยวกับผู้พัฒนา", use_container_width=True)
+    st.page_link("pages/1_about.py", label="🧑‍💻 เกี่ยวกับผู้พัฒนา", use_container_width=True)
 
 st.write("")
 
